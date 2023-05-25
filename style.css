@@ -1,7 +1,12 @@
+html{
+  font-size: 16px;
+}
+
 body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter";
+  font-size: 16px;
 }
 
 /* ESTRUCTURA */
@@ -48,7 +53,7 @@ header {
 
 /* TEXT-AREA */
 
-.div-input{
+.div-input {
   width: 60%;
   height: 60%;
   padding: 10px;
@@ -68,7 +73,6 @@ header {
   font-family: "Inter";
   font-weight: bold;
   font-size: large;
-
 }
 
 .text-area:focus {
@@ -108,8 +112,8 @@ header {
   font-family: "Inter";
   width: 250px;
   height: 50px;
-  border: solid 1px darkblue;
-  background-color: darkblue;
+  border: solid 1px #037;
+  background-color: #037;
   color: #fff;
   border-radius: 10px;
 }
@@ -118,7 +122,7 @@ header {
   font-family: "Inter";
   width: 250px;
   height: 50px;
-  border: solid 1px darkblue;
+  border: solid 1px #037;
   background-color: #ccc;
   color: darkblue;
   border-radius: 10px;
@@ -140,7 +144,7 @@ footer {
   box-sizing: border-box;
   padding: 20px;
 
-  display: flex;  /* MODIFICAR A FLEX O NONE*/
+  display: flex; /* MODIFICAR A FLEX O NONE*/
   flex-direction: column;
   justify-content: center;
   text-align: center;
@@ -175,17 +179,16 @@ footer {
   box-sizing: border-box;
   padding: 20px;
 
-  display: none;  /* MODIFICAR A FLEX O NONE*/
+  display: none; /* MODIFICAR A FLEX O NONE*/
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
   align-items: center;
 }
 
-.p-traducido{
+.p-traducido {
   width: 100%;
   height: auto;
-  
 
   color: #555;
   font-family: "Inter";
@@ -194,14 +197,112 @@ footer {
   text-align: center;
 }
 
-.btn-copiar{
+.btn-copiar {
   font-family: "Inter";
   width: 90%;
   height: 50px;
   border: solid 1px darkblue;
   background-color: #fff;
-  color: darkblue;
+  color: #037;
   border-radius: 10px;
-
 }
 
+@media only screen and (max-width: 600px) {
+  /* ESTRUCTURA */
+  
+  footer {
+    display: none;
+  }
+
+  .div-container {
+    width: 100%;
+    height: 100%;
+    padding: 5vh 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .main {
+    width: 100%;
+    height: fit-content;
+    gap: 0;
+  }
+
+  
+  .aside {
+    width: 100%;
+    
+  }
+
+  /* HEADER */
+  header {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .header-logo {
+    height: 2em;
+  }
+
+  /* TEXT-AREA */
+
+  .div-input{
+    width: 100%;
+  }
+
+    
+  .text-area {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .label{
+    font-size: 0.8rem;
+  }
+
+  /* BOTONES */
+  .div-botones{
+    height: fit-content;
+    width: 100%;
+    
+  }
+
+  .div-convertir {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .div-convertir > button {
+    width: 40vw;
+  }
+
+  /* ASIDE */
+
+  .img{
+    display: none;
+  }
+  .div-resultado {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .div-resultado-2 {
+    display: none;
+    flex-direction: column;
+
+  }
+
+  .div-resultado > p{
+    font-size: 0.8rem;
+  }
+
+  .div-resultado-2 > p{
+    font-size: 0.8rem;
+  }
+}
