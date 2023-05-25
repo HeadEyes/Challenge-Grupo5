@@ -88,30 +88,35 @@ header {
 
 .div-botones {
   height: 15%;
+  width: 100%;
   padding: 10px;
   box-sizing: border-box;
-  align-self: center;
   text-align: left;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
 }
 
 .label {
   font-size: 14px;
   font-weight: bold;
   color: #555;
-  padding: 10px;
+  padding: 0 0 10px 10%;
+  
 }
 
-.div-convertir {
-  margin-top: 10px;
-}
 
+.div-convertir{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 .btn-enc {
   font-family: "Inter";
-  width: 250px;
-  height: 50px;
+  padding: 15px 0; 
+  width: 35%;
   border: solid 1px #037;
   background-color: #037;
   color: #fff;
@@ -120,13 +125,15 @@ header {
 
 .btn-des {
   font-family: "Inter";
-  width: 250px;
-  height: 50px;
+  padding: 15px 0; 
+  width: 35%;
   border: solid 1px #037;
   background-color: #ccc;
   color: darkblue;
   border-radius: 10px;
 }
+
+
 
 footer {
   height: 5%;
@@ -259,18 +266,23 @@ footer {
     height: 40vh;
   }
 
-  .label{
-    font-size: 0.8rem;
-  }
 
   /* BOTONES */
   .div-botones{
     height: fit-content;
     width: 100%;
-    
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .label{
+    font-size: 0.8rem;
+    padding: 0;
   }
 
   .div-convertir {
+    margin-top: 0.2rem;
     display: flex;
     flex-direction: row;
     width: 100%;
