@@ -56,3 +56,14 @@ document.querySelector(".btn-des").onclick = () => {
     alert("Debe escribir algo");
   }
 };
+
+
+
+// PORTAPAPELES
+
+document.querySelector(".btn-copiar").onclick = ()=>{
+  navigator.clipboard.writeText(document.querySelector(".p-traducido").innerHTML)
+  
+  console.log('Copiado');
+};
+
